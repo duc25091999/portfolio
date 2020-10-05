@@ -1,0 +1,330 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar { 
+    width: 0;
+} 
+
+
+
+body{
+    margin: 0rem 3rem;
+    font-family: 'Heebo', sans-serif;
+    background-color: #E8E8E8;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid black;
+}
+.nav__span,.nav__span__hidden{
+    height: 100%;
+    margin: 0;
+    border: none;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+ul{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+nav ul li {
+    list-style: none;
+    overflow: hidden;
+    cursor: pointer;
+    height: 1rem;
+}
+nav ul li:hover .nav__span{
+    transform: translateY(-100%);
+}
+nav ul li:hover .nav__span__hidden{
+    transform: translateY(-100%);
+}
+.intro{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.intro h1{
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    color: black;
+    margin: 0px auto;
+    font-size: 7rem;
+}
+
+.intro h1 span{
+    margin-top:0;
+    height: auto;
+    border: none;
+}
+h1{
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 90%;
+    margin-bottom: 5rem;
+    color: white;
+}
+span{
+    margin-top:2rem;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid black;
+}
+#span1,#span2,#span3,#span4,#span5,#span6{width: 0;}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__img{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: 3rem;
+    transform-origin:left;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#project-img-1{
+    background-image: url("./images/project1.jpg");
+}
+#project-img-2{
+    background-image: url("./images/project2.jpg");
+}
+#project-img-4{
+    background-image: url("./images/project3.jpg");
+}
+#project-img-5{
+    background-image: url("./images/project4.jpg");
+}
+#project-img-6{
+    background-image: url("./images/project5.jpg");
+}
+
+
+.imgcover{
+    background-color:#E8E8E8 ;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project__left{
+    width: 60%;
+    margin-bottom: 5rem;
+}
+.project__left h1{
+    color:black;
+    margin-top: 0;
+    font-size: 4rem;
+    width: 100%;
+    margin-bottom: 0;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+.project__left span{
+    border: none;
+    margin-top: 0;
+    height: 100%;
+}
+.hiretext{
+    position: absolute;
+}
+.project__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 500px;
+}
+.project__right img{
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+.project__right h5{
+    transform-origin: bottom left;
+    transform: rotate(-90deg) translateY(100%);
+    font-size: 0.7rem;
+}
+.project__right_decor{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+.project__right_decor img{
+    width: 30px;
+    height: 30px;
+}
+footer{
+    margin: 2rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.modalbg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ,  visibility 0.5s;
+    
+}
+.modal{
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    background-color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    text-align: center;
+    border-radius: 2px;
+    
+}
+.modal-details{
+    padding-top: 3rem;
+}
+.modal-details h3{
+    margin-bottom: 2rem;
+}
+
+.modal .modal-btn{
+    padding: 5px 7px;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    margin: 3rem 0.3rem;
+    display: inline-block;
+    background-color: black;
+    cursor: pointer;
+}
+.close-btn{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
+    top: 1rem;
+    right: 1rem;
+    
+}
+.secondary{
+    color: black !important;
+    background-color: white !important;
+}
+#modal-project-1,#modal-project-2,#modal-project-3,#modal-project-4,#modal-project-5,#modal-project-6{
+    visibility: hidden;
+}
+    
+@media screen and (max-width:1000px){
+    .intro h1{
+        font-size: 5rem;
+        height: 80px;
+    }
+}
+@media screen and (max-width:960px){
+    .project{
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .project__left{
+        width: 100%;
+    }
+    .project__right h1{
+        position: absolute;
+        top: 0;
+    }
+    .project__img{
+        margin-top: 10rem;
+    }
+}
+@media screen and (max-width:750px){
+    .intro h1{
+        font-size: 4rem;
+        height: 65px;
+    }
+    .intro h1 span{
+        height: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .project__left h1{
+        font-size: 3rem;
+    }
+    .intro{
+        margin-top: 2rem;
+    }
+    .intro h1{
+        font-size: 3rem;
+        height: 60px;
+    }
+}
+@media screen and (max-width:480px){
+    body{
+        margin: 0 2rem;
+    }
+    .project__left h1{
+        font-size: 2rem;
+        height: 30px;
+    }
+    nav ul{
+        width: 150px;
+    }
+    .intro h1{
+        font-size: 2rem;
+        height: 40px;
+    }
+    .project__right h1{
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+    .project__img{
+        height: 400px;
+        margin-top: 4rem;
+    }
+    .project__img__hover .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .project__img__hover .buttons button{
+        margin-bottom: 1rem;
+    }
+    .modal{
+        width: 100vw;
+    }
+    
+}
+    

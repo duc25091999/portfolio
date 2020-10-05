@@ -1,0 +1,397 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(35,35,35);
+}
+nav{
+    border-bottom: 1px solid rgb(234,234,234);
+    color: rgb(234,234,234);
+    z-index: 1;
+    position: relative;
+}
+.nav__span__inactive{
+    margin: 0;
+}
+nav ul li:hover .nav__span__inactive{
+    transform: translateY(0);
+}
+.intro{
+    margin-top:2rem;
+}
+.intro__picture{
+    background-image: url(./images/pexels-roghi-arabpour-4467879.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: rgba(35,35,35,0.7);
+    width: 45%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.intro__picture::after{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(35,35,35,0.8);
+}
+.intro h1{
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    color: rgb(234,234,234);
+    z-index: 1;
+    margin: 0px auto;
+}
+span{
+    border:none;
+    color: rgb(234,234,234);
+    display: block;
+    padding: 0;
+}
+.intro span{
+    margin-top:0;
+    height: auto;
+}
+.hiredText{
+    position: absolute;
+}
+.bio__1 h3,.bio__2 h3{
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+}
+.bio__1{
+    margin-top: 10rem;
+}
+.bio__1 span{
+    margin-left: 10rem;
+    width: fit-content;
+    position: absolute;
+    height: 100%;
+    margin-top: 0;
+}
+.bio__2{
+    margin-top: 3rem;
+}
+.bio__2 span{
+    margin-left: 20rem;
+    width: fit-content;
+    position: absolute;
+    height: 100%;
+    margin-top: 0;
+}
+
+
+.contact{
+    color: rgb(234,234,234);
+    display: flex;
+    margin-top: 5rem;
+}
+.contact__left{
+    width:10rem;
+}
+.contact__left h5{
+    transform-origin: bottom left;
+    transform: rotate(-90deg) translateY(100%);
+    font-size: 0.7rem;
+    margin-top: 5rem;
+}
+.contact__right ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    height: 100%;
+    width: 100px;
+}
+.contact ul li{
+    margin-bottom: 2rem;
+}
+.contact ul li:hover .contact__hiretext{
+    transform: translateY(-100%) !important;
+}
+.contact ul li:hover .contact__under{
+    transform: translateY(-100%);
+}
+.contact__right h5{
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+} 
+.contact__right span{
+    margin-top: 0;
+    height: 100%;
+    color: rgb(134,134,134);
+}
+.contact__hiretext{
+    position: absolute;
+    transition: transform 0.5s cubic-bezier(.27,.66,.27,1);
+}
+.contact__under{
+    position: relative;
+    top: 100%;
+    transition: transform 0.5s cubic-bezier(.27,.66,.27,1);
+    color: rgb(234,234,234) !important;
+}
+.skills{
+    display: flex;
+    color:rgb(234,234,234);
+    margin-left: 20rem;
+    position: relative;
+}
+.skills h5{
+    transform-origin: bottom left;
+    transform: rotate(-90deg) translateY(100%);
+    font-size: 0.7rem;
+    position:absolute;
+    top:5rem;
+    left:-20rem;
+    color:rgb(234,234,234);
+    margin-top: 1.5rem;
+}
+.skills ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 3rem;
+}
+.skills ul li {
+    margin-bottom:2rem ;
+}
+.skills ul li h3{
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+}
+.skill__hiretext{
+    position: absolute;
+}
+.skills span{
+    height: auto;
+}
+.cursor {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.1);
+    opacity: 0;
+    margin: -100px 0 0 -100px;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    z-index: 0;
+  }
+.works{
+    position: relative;
+    
+}
+.works h5{
+    transform-origin: bottom left;
+    transform: rotate(-90deg) translateY(100%);
+    font-size: 0.7rem;
+    position:absolute;
+    top:8rem;left:0rem;
+    color:rgb(234,234,234)
+}
+.works ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 20rem;
+    margin-top: 8rem;
+    width: fit-content;
+}
+.works ul li {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+}
+
+.works ul li h1{
+    font-size: 4rem;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.works ul li span{
+    position: relative;
+    
+}
+.work__hiretext{
+    position: relative;
+    height: 100%;
+    margin-top: 0;
+    color: rgb(134,134,134);
+    transition: color 0.2s ease-in-out;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.works ul li:hover .work__hiretext{
+    color: rgb(234,234,234);
+}
+.project-overlay a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+footer h5{
+    color:rgb(234,234,234) ;
+}
+.progressbar {
+    position: fixed;
+    top: 30vh;
+    right: 2rem;
+    background: rgb(134,134,134);
+    width: 1px;
+    z-index: 1;
+}
+
+@media screen and (max-width:1250px){
+    
+    .works ul li h1{
+        font-size: 3rem;
+        
+    }
+    .works ul{
+        margin-left: 10rem;
+    }
+    .works ul li span::before{
+        height: 2.5rem;
+    }
+}
+@media screen and (max-width:1000px){
+    .intro h1{
+        font-size: 4rem;
+        height: 60px;
+    }
+    .bio__2 span{
+        margin-left: 15rem;
+    }
+    .skills{
+        margin-left: 10rem;
+    }
+    .skills h5{
+        margin-left: 10rem;
+    }
+    #skilllabel{
+        margin: 3rem 0 0 10rem !important;
+        width: calc(100vw - 16rem) !important;
+    }
+}
+@media screen and (max-width:850px){
+    .intro__picture{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin-top: 2rem;
+    }
+    .bio__1{
+        margin-top:2rem;
+    }
+    .bio__1 span{
+        margin-left: 3rem;
+    }
+    .bio__2 span{
+        margin-left: 5rem;
+    }
+    .contact__left{
+        width: 5rem;
+    }
+    #skilllabel{
+        margin: 3rem 0  !important;
+        width: calc(100vw - 6rem) !important;
+    }
+    .skills{
+        margin-left: 0rem;
+    }
+    .skills ul{
+        margin-top: 0rem;
+    }
+    .skills h5{
+        transform: rotate(0deg) ;
+        top: -2.5rem;
+        margin-left: 20rem;
+        margin-top:0;
+    }
+    .works h5{
+        transform: rotate(0deg) ;
+        top: -2.5rem;
+        margin-left: 0;
+    }
+    .works ul{
+        margin-top: 5rem;
+        margin-left: 0rem;
+    }
+    .works ul li {
+        margin-bottom: 2rem;
+    }
+    .works ul li h1{
+        font-size: 3rem;
+        height: 50px;
+    }
+    .works ul li span::before{
+        height: 2.7rem;
+    }
+}
+@media screen and (max-width:660px){
+    .intro span{
+        font-size: 2.5rem;
+    }
+    .bio__1 span , .bio__2 span{
+        margin-left: 0;
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:570px){
+    .works ul li h1{
+        font-size: 2.5rem;
+    }
+    .cursor{
+        display: none;
+    }
+}
+@media screen and (max-width:480px){
+    body{
+        margin: 0 2rem;
+    }
+    .intro span{
+        font-size: 2.2rem;
+    }
+    .skills h3{
+        font-size: 1rem;
+    }
+    
+    #skilllabel{
+        width: calc(100vw - 4rem) !important;
+    }
+    .works ul li h1{
+        font-size: 1.7rem;
+        height: 25px;
+    }
+}
+
+
+
+
+    
+    
+    
