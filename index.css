@@ -161,7 +161,6 @@ span{
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    height: 500px;
 }
 .project__right img{
     -webkit-transform: scale(-1, 1);
@@ -176,6 +175,7 @@ span{
     display: flex;
     justify-content: space-between;
     margin-right: 2rem;
+    margin-bottom: 6rem;
 }
 .project__right_decor img{
     width: 30px;
@@ -269,6 +269,9 @@ footer{
     }
     .project__img{
         margin-top: 10rem;
+    }
+    .project__right_decor{
+        margin-bottom: unset;
     }
 }
 @media screen and (max-width:750px){
