@@ -97,6 +97,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   
+    $(".p-0").hover(function () {
+      $(".cursor").css({
+        "background-image": "url(./images/project0.jpg)",
+      });
+    });
     $(".p-1").hover(function () {
       $(".cursor").css({
         "background-image": "url(./images/project1.jpg)",
@@ -104,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
     $(".p-2").hover(function () {
       $(".cursor").css({
-        "background-image": "url(./images/project2.jpg)",
+        "background-image": "url(./images/project2.png)",
       });
     });
     // $(".p-3").hover(function () {

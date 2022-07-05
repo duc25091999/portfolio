@@ -89,7 +89,7 @@ span{
     height: 1px;
     border-top: 1px solid black;
 }
-#span1,#span2,#span3,#span4,#span5,#span6{width: 0;}
+#span0,#span1,#span2,#span3,#span4,#span5,#span6,#span7,#span8{width: 0;}
 
 .project{
     display: flex;
@@ -108,11 +108,14 @@ span{
     position: relative;
     cursor: pointer;
 }
+#project-img-0{
+    background-image: url("./images/project0.jpg");
+}
 #project-img-1{
     background-image: url("./images/project1.jpg");
 }
 #project-img-2{
-    background-image: url("./images/project2.jpg");
+    background-image: url("./images/project2.png");
 }
 #project-img-4{
     background-image: url("./images/project3.jpg");
@@ -186,6 +189,10 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+footer ul {
+    gap:1rem;
+    width: unset;
+}
 .modalbg{
     position: fixed;
     top: 0;
@@ -245,7 +252,7 @@ footer{
     color: black !important;
     background-color: white !important;
 }
-#modal-project-1,#modal-project-2,#modal-project-3,#modal-project-4,#modal-project-5,#modal-project-6{
+#modal-project-0,#modal-project-1,#modal-project-2,#modal-project-3,#modal-project-4,#modal-project-5,#modal-project-6{
     visibility: hidden;
 }
     

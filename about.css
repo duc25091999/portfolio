@@ -256,6 +256,10 @@ span{
 footer h5{
     color:rgb(234,234,234) ;
 }
+footer ul {
+    gap:1rem;
+    width: unset;
+}
 .progressbar {
     position: fixed;
     top: 30vh;
