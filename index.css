@@ -1,29 +1,34 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-*{
+
+* {
     margin: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar { 
+
+::-webkit-scrollbar {
     width: 0;
-} 
+}
 
 
 
-body{
+body {
     margin: 0rem 3rem;
     font-family: 'Heebo', sans-serif;
     background-color: #E8E8E8;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid black;
 }
-.nav__span,.nav__span__hidden{
+
+.nav__span,
+.nav__span__hidden {
     height: 100%;
     margin: 0;
     border: none;
@@ -31,35 +36,42 @@ nav{
     transition: transform 0.4s ease-in-out;
 }
 
-ul{
+ul {
     display: flex;
     width: 200px;
     justify-content: space-between;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
-a{
+
+a {
     color: inherit;
     text-decoration: none;
 }
+
 nav ul li {
     list-style: none;
     overflow: hidden;
     cursor: pointer;
     height: 1rem;
 }
-nav ul li:hover .nav__span{
+
+nav ul li:hover .nav__span {
     transform: translateY(-100%);
 }
-nav ul li:hover .nav__span__hidden{
+
+nav ul li:hover .nav__span__hidden {
     transform: translateY(-100%);
 }
-.intro{
+
+.intro {
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
-.intro h1{
+
+.intro h1 {
     position: relative;
     overflow: hidden;
     height: 100px;
@@ -68,12 +80,13 @@ nav ul li:hover .nav__span__hidden{
     font-size: 7rem;
 }
 
-.intro h1 span{
-    margin-top:0;
+.intro h1 span {
+    margin-top: 0;
     height: auto;
     border: none;
 }
-h1{
+
+h1 {
     margin-top: 3rem;
     font-size: 5rem;
     font-family: 'Heebo', sans-serif;
@@ -82,54 +95,72 @@ h1{
     margin-bottom: 5rem;
     color: white;
 }
-span{
-    margin-top:2rem;
+
+span {
+    margin-top: 2rem;
     display: block;
     width: 100%;
     height: 1px;
     border-top: 1px solid black;
 }
-#span0,#span1,#span2,#span3,#span4,#span5,#span6,#span7,#span8{width: 0;}
+#span-1,
+#span0,
+#span1,
+#span2,
+#span3,
+#span4,
+#span5,
+#span6,
+#span7,
+#span8 {
+    width: 0;
+}
 
-.project{
+.project {
     display: flex;
     justify-content: space-between;
 }
 
-.project__img{
+.project__img {
     height: 500px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     margin-top: 3rem;
-    transform-origin:left;
+    transform-origin: left;
     overflow: hidden;
     position: relative;
     cursor: pointer;
 }
-#project-img-0{
+
+#project-img-0 {
     background-image: url("./images/project0.jpg");
 }
-#project-img-1{
+
+#project-img-1 {
     background-image: url("./images/project1.jpg");
 }
-#project-img-2{
+
+#project-img-2 {
     background-image: url("./images/project2.png");
 }
-#project-img-4{
+
+#project-img-4 {
     background-image: url("./images/project3.jpg");
 }
-#project-img-5{
+
+#project-img-5 {
     background-image: url("./images/project4.jpg");
 }
-#project-img-6{
+
+#project-img-6 {
     background-image: url("./images/project5.jpg");
 }
 
 
-.imgcover{
-    background-color:#E8E8E8 ;
+.imgcover {
+    background-color: #E8E8E8;
     position: relative;
     top: 0;
     left: 0;
@@ -137,12 +168,41 @@ span{
     height: 100%;
 }
 
-.project__left{
+.wrapper {
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.js-scroll-slider {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.js-scroll-slider__item {
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 640px) {
+    .js-scroll-slider__item {
+        width: 400px;
+    }
+}
+
+.wrapper img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.project__left {
     width: 60%;
     margin-bottom: 5rem;
 }
-.project__left h1{
-    color:black;
+
+.project__left h1 {
+    color: black;
     margin-top: 0;
     font-size: 4rem;
     width: 100%;
@@ -151,81 +211,93 @@ span{
     position: relative;
     overflow: hidden;
 }
-.project__left span{
+
+.project__left span {
     border: none;
     margin-top: 0;
     height: 100%;
 }
-.hiretext{
+
+.hiretext {
     position: absolute;
 }
-.project__right{
+
+.project__right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
 }
-.project__right img{
+
+.project__right img {
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
-.project__right h5{
+
+.project__right h5 {
     transform-origin: bottom left;
     transform: rotate(-90deg) translateY(100%);
     font-size: 0.7rem;
 }
-.project__right_decor{
+
+.project__right_decor {
     display: flex;
     justify-content: space-between;
     margin-right: 2rem;
     margin-bottom: 6rem;
 }
 
-.project__right_decor img{
+.project__right_decor img {
     width: 30px;
     height: 30px;
 }
-footer{
+
+footer {
     margin: 2rem 0 3rem 0;
     display: flex;
     justify-content: space-between;
 }
+
 footer ul {
-    gap:1rem;
+    gap: 1rem;
     width: unset;
 }
-.modalbg{
+
+.modalbg {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ,  visibility 0.5s;
-    
+    transition: opacity 0.5s, visibility 0.5s;
+
 }
-.modal{
+
+.modal {
     position: absolute;
     width: 30rem;
     height: 20rem;
     background-color: whitesmoke;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%, -50%, 0);
     text-align: center;
     border-radius: 2px;
-    
+
 }
-.modal-details{
+
+.modal-details {
     padding-top: 3rem;
 }
-.modal-details h3{
+
+.modal-details h3 {
     margin-bottom: 2rem;
 }
 
-.modal .modal-btn{
+.modal .modal-btn {
     padding: 5px 7px;
     font-family: 'Heebo', sans-serif;
     color: white;
@@ -237,7 +309,8 @@ footer ul {
     background-color: black;
     cursor: pointer;
 }
-.close-btn{
+
+.close-btn {
     position: absolute;
     height: 25px;
     width: 25px;
@@ -247,95 +320,121 @@ footer ul {
     margin: 0;
     top: 1rem;
     right: 1rem;
-    
+
 }
-.secondary{
+
+.secondary {
     color: black !important;
     background-color: white !important;
 }
-#modal-project-0,#modal-project-1,#modal-project-2,#modal-project-3,#modal-project-4,#modal-project-5,#modal-project-6{
+
+#modal-project-0,
+#modal-project-1,
+#modal-project-2,
+#modal-project-3,
+#modal-project-4,
+#modal-project-5,
+#modal-project-6 {
     visibility: hidden;
 }
-    
-@media screen and (max-width:1000px){
-    .intro h1{
+
+@media screen and (max-width:1000px) {
+    .intro h1 {
         font-size: 5rem;
         height: 80px;
     }
 }
-@media screen and (max-width:960px){
-    .project{
+
+@media screen and (max-width:960px) {
+    .project {
         flex-direction: column-reverse;
         position: relative;
     }
-    .project__left{
+
+    .project__left {
         width: 100%;
     }
-    .project__right h1{
+
+    .project__right h1 {
         position: absolute;
         top: 0;
     }
-    .project__img{
+
+    .project__img {
         margin-top: 10rem;
     }
-    .project__right_decor{
+
+    .project__right_decor {
         margin-bottom: unset;
     }
 }
-@media screen and (max-width:750px){
-    .intro h1{
+
+@media screen and (max-width:750px) {
+    .intro h1 {
         font-size: 4rem;
         height: 65px;
     }
-    .intro h1 span{
+
+    .intro h1 span {
         height: 100%;
     }
 }
-@media screen and (max-width:600px){
-    .project__left h1{
+
+@media screen and (max-width:600px) {
+    .project__left h1 {
         font-size: 3rem;
     }
-    .intro{
+
+    .intro {
         margin-top: 2rem;
     }
-    .intro h1{
+
+    .intro h1 {
         font-size: 3rem;
         height: 60px;
     }
 }
-@media screen and (max-width:480px){
-    body{
+
+@media screen and (max-width:480px) {
+    body {
         margin: 0 2rem;
     }
-    .project__left h1{
+
+    .project__left h1 {
         font-size: 2rem;
         height: 30px;
     }
-    nav ul{
+
+    nav ul {
         width: 150px;
     }
-    .intro h1{
+
+    .intro h1 {
         font-size: 2rem;
         height: 40px;
     }
-    .project__right h1{
+
+    .project__right h1 {
         margin-top: 1rem;
         font-size: 3rem;
     }
-    .project__img{
+
+    .project__img {
         height: 400px;
         margin-top: 4rem;
     }
-    .project__img__hover .buttons{
+
+    .project__img__hover .buttons {
         display: flex;
         flex-direction: column;
     }
-    .project__img__hover .buttons button{
+
+    .project__img__hover .buttons button {
         margin-bottom: 1rem;
     }
-    .modal{
+
+    .modal {
         width: 100vw;
     }
-    
+
 }
-    

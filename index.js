@@ -36,7 +36,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
     0.15,
     "+=2"
   );
-
+  var tlSpan0 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#span-1",
+      start: "center 50%",
+    },
+  })
+  tlSpan0.to(
+    "#span-1",
+    { width: "100%", duration: 1.5, ease: Power4.easeOut },
+    "-=1.5"
+  );
   var tlProject0 = gsap.timeline({
     scrollTrigger: {
       trigger: "#project0",
