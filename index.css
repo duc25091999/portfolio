@@ -67,8 +67,8 @@ nav ul li:hover .nav__span__hidden {
 }
 
 .intro {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .intro h1 {
@@ -78,6 +78,7 @@ nav ul li:hover .nav__span__hidden {
     color: black;
     margin: 0px auto;
     font-size: 7rem;
+    margin-top: 2rem;
 }
 
 .intro h1 span {
@@ -171,17 +172,18 @@ span {
 .wrapper {
     overflow: hidden;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .js-scroll-slider {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .js-scroll-slider__item {
     flex-shrink: 0;
     width: 200px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 @media screen and (min-width: 640px) {
