@@ -287,12 +287,13 @@ footer ul {
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     text-align: center;
-    border-radius: 2px;
+    border-radius: 0.25rem;
 
 }
 
 .modal-details {
-    padding-top: 3rem;
+    padding: 3rem;
+    padding-bottom: 0;
 }
 
 .modal-details h3 {
@@ -310,6 +311,7 @@ footer ul {
     display: inline-block;
     background-color: black;
     cursor: pointer;
+    border-radius: 0.25rem;
 }
 
 .close-btn {
