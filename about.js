@@ -147,17 +147,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
   $(".p-7").hover(function () {
     $(".cursor").css({
-      "background-image": "url(./images/hectagon.jpg)",
+      "background-image": "url(./images/hectagon.PNG)",
     });
   });
   $(".p-8").hover(function () {
     $(".cursor").css({
-      "background-image": "url(./images/alotruck.jpg)",
+      "background-image": "url(./images/alotruck.PNG)",
     });
   });
   $(".p-9").hover(function () {
     $(".cursor").css({
-      "background-image": "url(./images/annhan.jpg)",
+      "background-image": "url(./images/annhan.PNG)",
+    });
+  });
+  $(".p-10").hover(function () {
+    $(".cursor").css({
+      "background-image": "url(./images/4sv.PNG)",
     });
   });
   var flag = false;
